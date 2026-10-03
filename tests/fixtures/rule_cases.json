@@ -1,0 +1,499 @@
+[
+  {
+    "id": "matrix_low_slow",
+    "operation": "level",
+    "input": {
+      "density": 0.25,
+      "speed": 0
+    },
+    "expected": {
+      "value": 1,
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "matrix_low_normal",
+    "operation": "level",
+    "input": {
+      "density": 0.25,
+      "speed": 0.5
+    },
+    "expected": {
+      "value": 1,
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "matrix_low_fast",
+    "operation": "level",
+    "input": {
+      "density": 0.25,
+      "speed": 2
+    },
+    "expected": {
+      "value": 1,
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "matrix_medium_slow",
+    "operation": "level",
+    "input": {
+      "density": 0.75,
+      "speed": 0
+    },
+    "expected": {
+      "value": 3,
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "matrix_medium_normal",
+    "operation": "level",
+    "input": {
+      "density": 0.75,
+      "speed": 0.5
+    },
+    "expected": {
+      "value": 2,
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "matrix_medium_fast",
+    "operation": "level",
+    "input": {
+      "density": 0.75,
+      "speed": 2
+    },
+    "expected": {
+      "value": 1,
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "matrix_high_slow",
+    "operation": "level",
+    "input": {
+      "density": 1.25,
+      "speed": 0
+    },
+    "expected": {
+      "value": 3,
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "matrix_high_normal",
+    "operation": "level",
+    "input": {
+      "density": 1.25,
+      "speed": 0.5
+    },
+    "expected": {
+      "value": 3,
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "matrix_high_fast",
+    "operation": "level",
+    "input": {
+      "density": 1.25,
+      "speed": 2
+    },
+    "expected": {
+      "value": 2,
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "density_0",
+    "operation": "density",
+    "input": 0,
+    "expected": {
+      "class": "LOW",
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "density_0.499999999",
+    "operation": "density",
+    "input": 0.499999999,
+    "expected": {
+      "class": "LOW",
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "density_0.5",
+    "operation": "density",
+    "input": 0.5,
+    "expected": {
+      "class": "MEDIUM",
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "density_0.999999999",
+    "operation": "density",
+    "input": 0.999999999,
+    "expected": {
+      "class": "MEDIUM",
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "density_1",
+    "operation": "density",
+    "input": 1,
+    "expected": {
+      "class": "HIGH",
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "density_6",
+    "operation": "density",
+    "input": 6,
+    "expected": {
+      "class": "HIGH",
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "density_None",
+    "operation": "density",
+    "input": null,
+    "expected": {
+      "status": "UNKNOWN",
+      "reason": "MISSING_VALUE"
+    }
+  },
+  {
+    "id": "density_-1",
+    "operation": "density",
+    "input": -1,
+    "expected": {
+      "status": "INVALID",
+      "reason": "NEGATIVE_VALUE"
+    }
+  },
+  {
+    "id": "density_True",
+    "operation": "density",
+    "input": true,
+    "expected": {
+      "status": "INVALID",
+      "reason": "NON_NUMERIC_VALUE"
+    }
+  },
+  {
+    "id": "density_0.5",
+    "operation": "density",
+    "input": "0.5",
+    "expected": {
+      "status": "INVALID",
+      "reason": "NON_NUMERIC_VALUE"
+    }
+  },
+  {
+    "id": "speed_0",
+    "operation": "speed",
+    "input": 0,
+    "expected": {
+      "class": "SLOW",
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "speed_0.099999999",
+    "operation": "speed",
+    "input": 0.099999999,
+    "expected": {
+      "class": "SLOW",
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "speed_0.1",
+    "operation": "speed",
+    "input": 0.1,
+    "expected": {
+      "class": "NORMAL",
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "speed_1.499999999",
+    "operation": "speed",
+    "input": 1.499999999,
+    "expected": {
+      "class": "NORMAL",
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "speed_1.5",
+    "operation": "speed",
+    "input": 1.5,
+    "expected": {
+      "class": "FAST",
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "speed_6",
+    "operation": "speed",
+    "input": 6,
+    "expected": {
+      "class": "FAST",
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "speed_None",
+    "operation": "speed",
+    "input": null,
+    "expected": {
+      "status": "UNKNOWN",
+      "reason": "MISSING_VALUE"
+    }
+  },
+  {
+    "id": "speed_-1",
+    "operation": "speed",
+    "input": -1,
+    "expected": {
+      "status": "INVALID",
+      "reason": "NEGATIVE_VALUE"
+    }
+  },
+  {
+    "id": "speed_True",
+    "operation": "speed",
+    "input": true,
+    "expected": {
+      "status": "INVALID",
+      "reason": "NON_NUMERIC_VALUE"
+    }
+  },
+  {
+    "id": "speed_0.5",
+    "operation": "speed",
+    "input": "0.5",
+    "expected": {
+      "status": "INVALID",
+      "reason": "NON_NUMERIC_VALUE"
+    }
+  },
+  {
+    "id": "level_missing_0_None",
+    "operation": "level",
+    "input": {
+      "density": 0,
+      "speed": null
+    },
+    "expected": {
+      "value": 1,
+      "status": "VALID",
+      "possible_levels": [
+        1
+      ]
+    }
+  },
+  {
+    "id": "level_missing_0.3_None",
+    "operation": "level",
+    "input": {
+      "density": 0.3,
+      "speed": null
+    },
+    "expected": {
+      "value": 1,
+      "status": "VALID",
+      "possible_levels": [
+        1
+      ]
+    }
+  },
+  {
+    "id": "level_missing_0.7_None",
+    "operation": "level",
+    "input": {
+      "density": 0.7,
+      "speed": null
+    },
+    "expected": {
+      "value": null,
+      "status": "UNKNOWN",
+      "possible_levels": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "level_missing_1_None",
+    "operation": "level",
+    "input": {
+      "density": 1,
+      "speed": null
+    },
+    "expected": {
+      "value": null,
+      "status": "UNKNOWN",
+      "possible_levels": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "level_missing_None_0.5",
+    "operation": "level",
+    "input": {
+      "density": null,
+      "speed": 0.5
+    },
+    "expected": {
+      "value": null,
+      "status": "UNKNOWN",
+      "possible_levels": []
+    }
+  },
+  {
+    "id": "level_missing_0.3_-1",
+    "operation": "level",
+    "input": {
+      "density": 0.3,
+      "speed": -1
+    },
+    "expected": {
+      "value": null,
+      "status": "INVALID",
+      "possible_levels": []
+    }
+  },
+  {
+    "id": "count_area_0_20",
+    "operation": "density_from_count",
+    "input": {
+      "count": 0,
+      "area_m2": 20
+    },
+    "expected": {
+      "value": 0,
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "count_area_10_20",
+    "operation": "density_from_count",
+    "input": {
+      "count": 10,
+      "area_m2": 20
+    },
+    "expected": {
+      "value": 0.5,
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "count_area_20_20",
+    "operation": "density_from_count",
+    "input": {
+      "count": 20,
+      "area_m2": 20
+    },
+    "expected": {
+      "value": 1,
+      "status": "VALID"
+    }
+  },
+  {
+    "id": "count_area_1_0",
+    "operation": "density_from_count",
+    "input": {
+      "count": 1,
+      "area_m2": 0
+    },
+    "expected": {
+      "value": null,
+      "status": "INVALID"
+    }
+  },
+  {
+    "id": "count_area_0_0",
+    "operation": "density_from_count",
+    "input": {
+      "count": 0,
+      "area_m2": 0
+    },
+    "expected": {
+      "value": null,
+      "status": "INVALID"
+    }
+  },
+  {
+    "id": "count_area_-1_20",
+    "operation": "density_from_count",
+    "input": {
+      "count": -1,
+      "area_m2": 20
+    },
+    "expected": {
+      "value": null,
+      "status": "INVALID"
+    }
+  },
+  {
+    "id": "count_area_1_-20",
+    "operation": "density_from_count",
+    "input": {
+      "count": 1,
+      "area_m2": -20
+    },
+    "expected": {
+      "value": null,
+      "status": "INVALID"
+    }
+  },
+  {
+    "id": "count_area_None_20",
+    "operation": "density_from_count",
+    "input": {
+      "count": null,
+      "area_m2": 20
+    },
+    "expected": {
+      "value": null,
+      "status": "UNKNOWN"
+    }
+  },
+  {
+    "id": "count_area_1_None",
+    "operation": "density_from_count",
+    "input": {
+      "count": 1,
+      "area_m2": null
+    },
+    "expected": {
+      "value": null,
+      "status": "UNKNOWN"
+    }
+  },
+  {
+    "id": "count_area_1.5_20",
+    "operation": "density_from_count",
+    "input": {
+      "count": 1.5,
+      "area_m2": 20
+    },
+    "expected": {
+      "value": null,
+      "status": "INVALID"
+    }
+  }
+]

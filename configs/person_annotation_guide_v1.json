@@ -1,0 +1,11 @@
+{
+  "version": "person_visible_v1",
+  "task": "person_detection",
+  "class_mapping": {"person": 0},
+  "box_convention": "Visible person extent only, clipped to image/crop; do not invent hidden body extent.",
+  "occlusion": "Every visible person must be boxed. If presence or extent cannot be resolved, exclude the image/crop. No arbitrary ignore region or ignore class.",
+  "minimum_visibility": "No numerical cutoff is assumed: include each identifiable visible person; unresolved cases exclude scope.",
+  "crop_policy": "Review all visible context, including outside ROI; confirm truncated persons at every crop edge.",
+  "negative_policy": "Explicit empty confirmation after viewing the complete image/crop is required.",
+  "minimum_box_px": 1
+}

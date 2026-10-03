@@ -1,0 +1,11 @@
+{
+  "id": "yolov8n_hollywoodheads",
+  "weights": "weights/yolov8n_head_detector.pt",
+  "source": "https://huggingface.co/abhiWanKenobi/yolov8n_head_detection",
+  "revision": "c2cb4f015cf7bf07b7baeef5bef7075c1aa5148a",
+  "sha256": "9ed26700c7d473361bf0b8675948676ec7d7c728cf9ce75bdcde03a6c6fd1df7",
+  "license": "CC-BY-NC-4.0",
+  "training_dataset": "HollywoodHeads",
+  "target": "head",
+  "class_id": 0
+}

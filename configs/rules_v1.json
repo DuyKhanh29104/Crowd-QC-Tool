@@ -1,0 +1,15 @@
+{
+  "version": "rules_v1",
+  "source": "Historical implementation plan, sections 1.1, 6/T02, 12.1 (retired); baseline rules retained here, original PRD unverified",
+  "original_prd_verified": false,
+  "density": {"unit": "people_per_m2", "thresholds": [0.5, 1], "classes": ["LOW", "MEDIUM", "HIGH"]},
+  "speed": {"unit": "m_per_s", "thresholds": [0.1, 1.5], "classes": ["SLOW", "NORMAL", "FAST"]},
+  "interval_convention": "lower_inclusive_upper_exclusive",
+  "level_matrix": {"LOW": {"SLOW": 1, "NORMAL": 1, "FAST": 1}, "MEDIUM": {"SLOW": 3, "NORMAL": 2, "FAST": 1}, "HIGH": {"SLOW": 3, "NORMAL": 3, "FAST": 2}},
+  "round_before_classification": false,
+  "empty_roi": {"count": 0, "density": 0, "speed": null, "level": 1},
+  "membership": {"anchor": "ground_anchor", "exact_boundary": "INSIDE", "unresolved_anchor": "UNCERTAIN", "boundary_policy_status": "IMPLEMENTATION_PROPOSAL_PENDING_PRD"},
+  "reference_speed_profile": {"version": "reference_speed_v1", "window_seconds": 1, "window": "past", "estimator": "reviewed_path_length_over_valid_duration", "include_stationary": true, "bridge_unobserved_gaps": false, "sut_semantics_verified": false, "coverage_gate": "PENDING_PRD_AND_PILOT"},
+  "validity_states": ["VALID", "UNKNOWN", "UNCERTAIN", "INVALID"],
+  "reason_codes": ["MISSING_VALUE", "NEGATIVE_VALUE", "NON_FINITE_VALUE", "NON_NUMERIC_VALUE", "AREA_NOT_POSITIVE", "COUNT_NOT_INTEGER", "EMPTY_POPULATION", "MEMBERSHIP_UNCERTAIN", "OCCLUSION_UNBOUNDED", "CALIBRATION_INVALID", "SPEED_COVERAGE_INCOMPLETE", "NOT_REVIEWED", "STALE_DEPENDENCIES", "SUT_SEMANTICS_UNVERIFIED"]
+}

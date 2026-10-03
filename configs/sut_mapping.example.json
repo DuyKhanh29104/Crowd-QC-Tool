@@ -1,0 +1,13 @@
+{
+  "schema_version": "sut_mapping_v1",
+  "status": "DEMO",
+  "production_ready": false,
+  "fixture": "tests/fixtures/sut_demo.json",
+  "format": "json_records",
+  "fields": {"camera_id": "camera", "roi_id": "roi", "timestamp": "video_seconds", "count": "count", "density": "density", "speed": "speed", "level": "level"},
+  "units": {"timestamp": "seconds", "count": "people", "density": "people_per_m2", "speed": "m_per_s"},
+  "time_origin": "source_video_start_DEMO",
+  "semantics": {"count": "instantaneous_DEMO", "density": "instantaneous_DEMO", "speed": "past_1_second_DEMO", "level": "raw_DEMO"},
+  "null_policy": "preserve_missing_never_fill_zero",
+  "real_sut_contract": null
+}

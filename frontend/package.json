@@ -1,0 +1,33 @@
+{
+  "name": "crowd-qc-local",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "test:unit": "node --test tests/samples.test.mjs",
+    "test:viewer": "node --test tests/viewer.test.mjs",
+    "test:motion": "node --test tests/motion.test.mjs",
+    "test:e2e": "node tests/five_screen.mjs",
+    "test:tabs": "node tests/five_screen.mjs",
+    "test:review": "node --test tests/review-buffer.test.mjs",
+    "test:hold": "node --test tests/review-hold.test.mjs",
+    "test:layout": "node --test tests/layout.test.mjs",
+    "test:annotations": "node --test tests/annotations.test.mjs"
+  },
+  "dependencies": {
+    "konva": "9.3.20",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-konva": "18.2.10"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.20",
+    "@types/react-dom": "18.3.6",
+    "@vitejs/plugin-react": "4.4.1",
+    "playwright": "1.63.0",
+    "typescript": "5.8.3",
+    "vite": "6.4.3"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "profile_version": "person_candidate_v1",
+  "status": "CANDIDATE_NOT_SELECTED_ON_CCTV",
+  "architecture": "YOLO11n",
+  "weights_origin": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt",
+  "weights_license_reference": "https://www.ultralytics.com/license",
+  "license_note": "Upstream Ultralytics license; verify intended distribution terms before product release.",
+  "user_preferred_checkpoint": null,
+  "class_mapping": {"0": "person"},
+  "predict": {"imgsz": 640, "batch": 1, "conf": 0.25, "iou": 0.7, "max_det": 300, "classes": [0], "rect": false, "quantize": 32, "augment": false, "agnostic_nms": false, "verbose": false, "save": false},
+  "warmup_iterations": 2,
+  "head_detector_enabled": false,
+  "crowd_counter_enabled": false
+}

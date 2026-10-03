@@ -1,0 +1,645 @@
+{
+  "video": "D:\\AI_VinUni\\Tool_AutoLabel\\7.mp4",
+  "source_sha256": "94a57e9e66c994fce2ca13718869b9d7100efa29cb1cc818f894ef2d898d56e6",
+  "frame_count": 700,
+  "roi": {
+    "id": "3148c27b-8943-4a86-939e-867536040b9f",
+    "name": "Vùng quan sát",
+    "area_m2": 20.0,
+    "polygon": [
+      [
+        608.3010659387539,
+        548.3842018528989
+      ],
+      [
+        1142.7426020952735,
+        545.542096589741
+      ],
+      [
+        1418.4916925590092,
+        1080.0
+      ],
+      [
+        568.5022281398644,
+        1080.0
+      ]
+    ]
+  },
+  "human_box_review_records": 0,
+  "limits": "Counts and track lifetimes are diagnostics, not recall/precision or ID-switch metrics. No human GT for this video.",
+  "accuracy": {
+    "recall": null,
+    "precision": null,
+    "FN": null,
+    "FP": null,
+    "id_switches": null
+  },
+  "review": {
+    "before": {
+      "nearby": {
+        "mean_ms": 233.3578933333532,
+        "median_ms": 225.8045000016864,
+        "p95_ms": 308.4479999997711
+      },
+      "long_jump": {
+        "mean_ms": 261.0482000002321,
+        "median_ms": 281.5861999997651,
+        "p95_ms": 316.1037000008946
+      },
+      "cache_hit": {
+        "mean_ms": 1.4131266663753195,
+        "median_ms": 0.9497999999439344,
+        "p95_ms": 7.915300000604475
+      }
+    },
+    "after": {
+      "nearby": {
+        "mean_ms": 67.29868666686039,
+        "median_ms": 64.99579999945126,
+        "p95_ms": 104.38330000033602
+      },
+      "long_jump": {
+        "mean_ms": 147.71872500023164,
+        "median_ms": 155.20595000089088,
+        "p95_ms": 191.8915999995079
+      },
+      "cache_hit": {
+        "mean_ms": 1.691993333345939,
+        "median_ms": 1.1544999997568084,
+        "p95_ms": 9.081199999855016
+      }
+    }
+  },
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "inference": {
+    "before": {
+      "mean_ms": 25.305402307682154,
+      "median_ms": 23.902549999547773,
+      "p95_ms": 33.496699999886914,
+      "fps": 39.517253582505674,
+      "samples": 130,
+      "detections": 1865,
+      "mean_count": 14.346153846153847,
+      "unique_ids": 83,
+      "mean_observations_per_id": 15.132530120481928,
+      "untracked_detections": 609,
+      "peak_gpu_bytes": 51813376,
+      "metadata": {
+        "mode": "ROI_CROP_CONTEXT",
+        "crop_xyxy": [
+          440,
+          438,
+          1440,
+          1080
+        ],
+        "roi_bbox_xyxy": [
+          568,
+          545,
+          1419,
+          1080
+        ],
+        "padding_ratios": {
+          "left": 0.15,
+          "right": 0.15,
+          "top": 0.2,
+          "bottom": 0.1
+        },
+        "effective_padding_px": {
+          "left": 128,
+          "right": 21,
+          "top": 107,
+          "bottom": 0
+        },
+        "crop_size": [
+          1000,
+          642
+        ],
+        "imgsz_hw": [
+          288,
+          448
+        ],
+        "polygon_masked": false,
+        "source_size": [
+          1440,
+          1080
+        ],
+        "detection_policy": "KEEP_ALL_DETECTIONS_ATTACH_CONFIRMED_TRACK_IDS",
+        "base_size": 640,
+        "scale_policy": "FULL_FRAME_640_SCALE_STRIDE_ROUND_UP",
+        "boundary_policy": "CONTEXT_CROP_ORIGINAL_ROI_BOTTOM_CENTER"
+      },
+      "settings": {
+        "detection_target": "person",
+        "preset": "Custom",
+        "sampling_fps": 5,
+        "confidence": 0.15,
+        "density_threshold": 1.0,
+        "stationary_speed": 0.15,
+        "slow_speed": 0.3,
+        "stationary_ratio": 0.6,
+        "min_duration": 20.0,
+        "tracking": true,
+        "speed": true,
+        "imgsz": 640
+      }
+    },
+    "after_compatible": {
+      "mean_ms": 28.579280769120558,
+      "median_ms": 25.11200000117242,
+      "p95_ms": 43.55759999998554,
+      "fps": 34.990383700645246,
+      "samples": 130,
+      "detections": 1865,
+      "mean_count": 14.346153846153847,
+      "unique_ids": 83,
+      "mean_observations_per_id": 15.132530120481928,
+      "untracked_detections": 609,
+      "peak_gpu_bytes": 51813376,
+      "metadata": {
+        "mode": "ROI_CROP_CONTEXT",
+        "crop_xyxy": [
+          440,
+          438,
+          1440,
+          1080
+        ],
+        "roi_bbox_xyxy": [
+          568,
+          545,
+          1419,
+          1080
+        ],
+        "padding_ratios": {
+          "left": 0.15,
+          "right": 0.15,
+          "top": 0.2,
+          "bottom": 0.1
+        },
+        "effective_padding_px": {
+          "left": 128,
+          "right": 21,
+          "top": 107,
+          "bottom": 0
+        },
+        "crop_size": [
+          1000,
+          642
+        ],
+        "imgsz_hw": [
+          288,
+          448
+        ],
+        "polygon_masked": false,
+        "source_size": [
+          1440,
+          1080
+        ],
+        "detection_policy": "KEEP_ALL_DETECTIONS_ATTACH_CONFIRMED_TRACK_IDS",
+        "base_size": 640,
+        "scale_policy": "FULL_FRAME_640_SCALE_STRIDE_ROUND_UP",
+        "tracker": {
+          "tracker_type": "bytetrack",
+          "track_high_thresh": 0.25,
+          "track_low_thresh": 0.1,
+          "new_track_thresh": 0.25,
+          "track_buffer": 30,
+          "match_thresh": 0.8,
+          "fuse_score": true,
+          "effective_buffer_seconds": 6.0
+        },
+        "recovered_track_observations": 33,
+        "boundary_policy": "CONTEXT_CROP_ORIGINAL_ROI_BOTTOM_CENTER"
+      },
+      "settings": {
+        "detection_target": "person",
+        "preset": "Custom",
+        "sampling_fps": 5,
+        "confidence": 0.15,
+        "density_threshold": 1.0,
+        "stationary_speed": 0.15,
+        "slow_speed": 0.3,
+        "stationary_ratio": 0.6,
+        "min_duration": 20.0,
+        "tracking": true,
+        "speed": true,
+        "imgsz": 640
+      },
+      "identical_to_baseline": true
+    },
+    "crop_640": {
+      "mean_ms": 35.83584076925315,
+      "median_ms": 35.45970000050147,
+      "p95_ms": 38.44279999975697,
+      "fps": 27.905024091355813,
+      "samples": 130,
+      "detections": 2343,
+      "mean_count": 18.023076923076925,
+      "unique_ids": 91,
+      "mean_observations_per_id": 19.35164835164835,
+      "untracked_detections": 582,
+      "peak_gpu_bytes": 60379136,
+      "metadata": {
+        "mode": "ROI_CROP_CONTEXT",
+        "crop_xyxy": [
+          440,
+          438,
+          1440,
+          1080
+        ],
+        "roi_bbox_xyxy": [
+          568,
+          545,
+          1419,
+          1080
+        ],
+        "padding_ratios": {
+          "left": 0.15,
+          "right": 0.15,
+          "top": 0.2,
+          "bottom": 0.1
+        },
+        "effective_padding_px": {
+          "left": 128,
+          "right": 21,
+          "top": 107,
+          "bottom": 0
+        },
+        "crop_size": [
+          1000,
+          642
+        ],
+        "imgsz_hw": [
+          416,
+          640
+        ],
+        "polygon_masked": false,
+        "source_size": [
+          1440,
+          1080
+        ],
+        "detection_policy": "KEEP_ALL_DETECTIONS_ATTACH_CONFIRMED_TRACK_IDS",
+        "base_size": 640,
+        "scale_policy": "ROI_CROP_640_SCALE_STRIDE_ROUND_UP",
+        "tracker": {
+          "tracker_type": "bytetrack",
+          "track_high_thresh": 0.25,
+          "track_low_thresh": 0.1,
+          "new_track_thresh": 0.25,
+          "track_buffer": 30,
+          "match_thresh": 0.8,
+          "fuse_score": true,
+          "effective_buffer_seconds": 6.0
+        },
+        "recovered_track_observations": 49,
+        "boundary_policy": "CONTEXT_CROP_ORIGINAL_ROI_BOTTOM_CENTER"
+      },
+      "settings": {
+        "detection_target": "person",
+        "preset": "Custom",
+        "sampling_fps": 5,
+        "confidence": 0.15,
+        "density_threshold": 1.0,
+        "stationary_speed": 0.15,
+        "slow_speed": 0.3,
+        "stationary_ratio": 0.6,
+        "min_duration": 20.0,
+        "tracking": true,
+        "speed": true,
+        "imgsz": 640,
+        "roi_scale_mode": "crop"
+      }
+    },
+    "crop_960": {
+      "mean_ms": 41.06277230778058,
+      "median_ms": 41.908799999873736,
+      "p95_ms": 54.0316000005987,
+      "fps": 24.35295874581074,
+      "samples": 130,
+      "detections": 2833,
+      "mean_count": 21.79230769230769,
+      "unique_ids": 109,
+      "mean_observations_per_id": 20.743119266055047,
+      "untracked_detections": 572,
+      "peak_gpu_bytes": 81801216,
+      "metadata": {
+        "mode": "ROI_CROP_CONTEXT",
+        "crop_xyxy": [
+          440,
+          438,
+          1440,
+          1080
+        ],
+        "roi_bbox_xyxy": [
+          568,
+          545,
+          1419,
+          1080
+        ],
+        "padding_ratios": {
+          "left": 0.15,
+          "right": 0.15,
+          "top": 0.2,
+          "bottom": 0.1
+        },
+        "effective_padding_px": {
+          "left": 128,
+          "right": 21,
+          "top": 107,
+          "bottom": 0
+        },
+        "crop_size": [
+          1000,
+          642
+        ],
+        "imgsz_hw": [
+          640,
+          960
+        ],
+        "polygon_masked": false,
+        "source_size": [
+          1440,
+          1080
+        ],
+        "detection_policy": "KEEP_ALL_DETECTIONS_ATTACH_CONFIRMED_TRACK_IDS",
+        "base_size": 960,
+        "scale_policy": "ROI_CROP_960_SCALE_STRIDE_ROUND_UP",
+        "tracker": {
+          "tracker_type": "bytetrack",
+          "track_high_thresh": 0.25,
+          "track_low_thresh": 0.1,
+          "new_track_thresh": 0.25,
+          "track_buffer": 30,
+          "match_thresh": 0.8,
+          "fuse_score": true,
+          "effective_buffer_seconds": 6.0
+        },
+        "recovered_track_observations": 80,
+        "boundary_policy": "CONTEXT_CROP_ORIGINAL_ROI_BOTTOM_CENTER"
+      },
+      "settings": {
+        "detection_target": "person",
+        "preset": "Custom",
+        "sampling_fps": 5,
+        "confidence": 0.15,
+        "density_threshold": 1.0,
+        "stationary_speed": 0.15,
+        "slow_speed": 0.3,
+        "stationary_ratio": 0.6,
+        "min_duration": 20.0,
+        "tracking": true,
+        "speed": true,
+        "imgsz": 960,
+        "roi_scale_mode": "crop"
+      }
+    },
+    "crop_1280": {
+      "mean_ms": 57.055194615503964,
+      "median_ms": 56.67410000023665,
+      "p95_ms": 67.75009999910253,
+      "fps": 17.526887897570397,
+      "samples": 130,
+      "detections": 2879,
+      "mean_count": 22.146153846153847,
+      "unique_ids": 109,
+      "mean_observations_per_id": 20.880733944954127,
+      "untracked_detections": 603,
+      "peak_gpu_bytes": 108200448,
+      "metadata": {
+        "mode": "ROI_CROP_CONTEXT",
+        "crop_xyxy": [
+          440,
+          438,
+          1440,
+          1080
+        ],
+        "roi_bbox_xyxy": [
+          568,
+          545,
+          1419,
+          1080
+        ],
+        "padding_ratios": {
+          "left": 0.15,
+          "right": 0.15,
+          "top": 0.2,
+          "bottom": 0.1
+        },
+        "effective_padding_px": {
+          "left": 128,
+          "right": 21,
+          "top": 107,
+          "bottom": 0
+        },
+        "crop_size": [
+          1000,
+          642
+        ],
+        "imgsz_hw": [
+          832,
+          1280
+        ],
+        "polygon_masked": false,
+        "source_size": [
+          1440,
+          1080
+        ],
+        "detection_policy": "KEEP_ALL_DETECTIONS_ATTACH_CONFIRMED_TRACK_IDS",
+        "base_size": 1280,
+        "scale_policy": "ROI_CROP_1280_SCALE_STRIDE_ROUND_UP",
+        "tracker": {
+          "tracker_type": "bytetrack",
+          "track_high_thresh": 0.25,
+          "track_low_thresh": 0.1,
+          "new_track_thresh": 0.25,
+          "track_buffer": 30,
+          "match_thresh": 0.8,
+          "fuse_score": true,
+          "effective_buffer_seconds": 6.0
+        },
+        "recovered_track_observations": 154,
+        "boundary_policy": "CONTEXT_CROP_ORIGINAL_ROI_BOTTOM_CENTER"
+      },
+      "settings": {
+        "detection_target": "person",
+        "preset": "Custom",
+        "sampling_fps": 5,
+        "confidence": 0.15,
+        "density_threshold": 1.0,
+        "stationary_speed": 0.15,
+        "slow_speed": 0.3,
+        "stationary_ratio": 0.6,
+        "min_duration": 20.0,
+        "tracking": true,
+        "speed": true,
+        "imgsz": 1280,
+        "roi_scale_mode": "crop"
+      }
+    },
+    "low_conf_tracking": {
+      "mean_ms": 28.81612307697091,
+      "median_ms": 27.17635000044538,
+      "p95_ms": 40.907200000219746,
+      "fps": 34.70279458929622,
+      "samples": 130,
+      "detections": 1865,
+      "mean_count": 14.346153846153847,
+      "unique_ids": 82,
+      "mean_observations_per_id": 15.573170731707316,
+      "untracked_detections": 588,
+      "peak_gpu_bytes": 51813376,
+      "metadata": {
+        "mode": "ROI_CROP_CONTEXT",
+        "crop_xyxy": [
+          440,
+          438,
+          1440,
+          1080
+        ],
+        "roi_bbox_xyxy": [
+          568,
+          545,
+          1419,
+          1080
+        ],
+        "padding_ratios": {
+          "left": 0.15,
+          "right": 0.15,
+          "top": 0.2,
+          "bottom": 0.1
+        },
+        "effective_padding_px": {
+          "left": 128,
+          "right": 21,
+          "top": 107,
+          "bottom": 0
+        },
+        "crop_size": [
+          1000,
+          642
+        ],
+        "imgsz_hw": [
+          288,
+          448
+        ],
+        "polygon_masked": false,
+        "source_size": [
+          1440,
+          1080
+        ],
+        "detection_policy": "KEEP_ALL_DETECTIONS_ATTACH_CONFIRMED_TRACK_IDS",
+        "base_size": 640,
+        "scale_policy": "FULL_FRAME_640_SCALE_STRIDE_ROUND_UP",
+        "tracker": {
+          "tracker_type": "bytetrack",
+          "track_high_thresh": 0.25,
+          "track_low_thresh": 0.1,
+          "new_track_thresh": 0.25,
+          "track_buffer": 30,
+          "match_thresh": 0.8,
+          "fuse_score": true,
+          "effective_buffer_seconds": 6.0
+        },
+        "recovered_track_observations": 28,
+        "boundary_policy": "CONTEXT_CROP_ORIGINAL_ROI_BOTTOM_CENTER"
+      },
+      "settings": {
+        "detection_target": "person",
+        "preset": "Custom",
+        "sampling_fps": 5,
+        "confidence": 0.15,
+        "density_threshold": 1.0,
+        "stationary_speed": 0.15,
+        "slow_speed": 0.3,
+        "stationary_ratio": 0.6,
+        "min_duration": 20.0,
+        "tracking": true,
+        "speed": true,
+        "imgsz": 640,
+        "track_use_low_conf": true
+      }
+    },
+    "two_second_buffer": {
+      "mean_ms": 26.3621238462712,
+      "median_ms": 24.477349999870057,
+      "p95_ms": 39.74689999995462,
+      "fps": 37.93321076220668,
+      "samples": 130,
+      "detections": 1865,
+      "mean_count": 14.346153846153847,
+      "unique_ids": 86,
+      "mean_observations_per_id": 14.616279069767442,
+      "untracked_detections": 608,
+      "peak_gpu_bytes": 51813376,
+      "metadata": {
+        "mode": "ROI_CROP_CONTEXT",
+        "crop_xyxy": [
+          440,
+          438,
+          1440,
+          1080
+        ],
+        "roi_bbox_xyxy": [
+          568,
+          545,
+          1419,
+          1080
+        ],
+        "padding_ratios": {
+          "left": 0.15,
+          "right": 0.15,
+          "top": 0.2,
+          "bottom": 0.1
+        },
+        "effective_padding_px": {
+          "left": 128,
+          "right": 21,
+          "top": 107,
+          "bottom": 0
+        },
+        "crop_size": [
+          1000,
+          642
+        ],
+        "imgsz_hw": [
+          288,
+          448
+        ],
+        "polygon_masked": false,
+        "source_size": [
+          1440,
+          1080
+        ],
+        "detection_policy": "KEEP_ALL_DETECTIONS_ATTACH_CONFIRMED_TRACK_IDS",
+        "base_size": 640,
+        "scale_policy": "FULL_FRAME_640_SCALE_STRIDE_ROUND_UP",
+        "tracker": {
+          "tracker_type": "bytetrack",
+          "track_high_thresh": 0.25,
+          "track_low_thresh": 0.1,
+          "new_track_thresh": 0.25,
+          "track_buffer": 10,
+          "match_thresh": 0.8,
+          "fuse_score": true,
+          "effective_buffer_seconds": 2.0
+        },
+        "recovered_track_observations": 28,
+        "boundary_policy": "CONTEXT_CROP_ORIGINAL_ROI_BOTTOM_CENTER"
+      },
+      "settings": {
+        "detection_target": "person",
+        "preset": "Custom",
+        "sampling_fps": 5,
+        "confidence": 0.15,
+        "density_threshold": 1.0,
+        "stationary_speed": 0.15,
+        "slow_speed": 0.3,
+        "stationary_ratio": 0.6,
+        "min_duration": 20.0,
+        "tracking": true,
+        "speed": true,
+        "imgsz": 640,
+        "track_buffer_seconds": 2
+      }
+    }
+  }
+}
